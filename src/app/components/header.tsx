@@ -1,11 +1,21 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-[#357C8A] to-[#4CA1AF] shadow sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
+        {/* <Image
+              src="/logo.png"     
+              alt="Calmnest Logo"
+              width={32}
+              height={32}
+              className="rounded" 
+            /> */} 
+            {/*I need to fix this later*/}
+
           <div className="text-2xl font-bold text-yellow-300">Calmnest</div>
           <nav className="space-x-6">
             <Link href="/" className="hover:text-yellow-300 text-yellow-300">Accueil</Link>

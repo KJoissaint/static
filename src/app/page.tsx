@@ -1,31 +1,18 @@
 import Head from "next/head";
 import Link from "next/link";
+import Header from '@/app/components/header';
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Welcome to Calmnest</title>
-        <meta name="description" content="Promote your app with Calmnest" />
+        <meta name="description" content="Calm your mind with Calmnest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
-      <header className="bg-gradient-to-r from-[#357C8A] via-[#1E3A8A] to-[#38BDF8] animate-gradient shadow sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="text-2xl font-bold text-yellow-400">Calmnest</div>
-            <nav className="space-x-6">
-              <Link href="/" className="text-yellow-300 hover:text-white transition">Home</Link>
-              <Link href="/product" className="text-yellow-300 hover:text-white transition">Product</Link>
-              <Link href="/contact" className="text-yellow-300 hover:text-white transition">Contact</Link>
-              <Link href="/about" className="text-yellow-300 hover:text-white transition">About Us</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-
-
+      
+      <Header />
+      
       <main className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-6">
